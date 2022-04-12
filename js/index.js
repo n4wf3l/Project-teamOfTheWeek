@@ -13,7 +13,6 @@ const playersOnField = document.querySelectorAll(".player");
 //variabele voor het bijhouden welke speler er geselecteerd is
 let currentSelectedPlayer = -1;
 
-//Als je de pagina herlaad, dan functie PlayersFromLocalStorage
 
 //maak een onClick (op de img) event aan voor alle spelers op het veld, deze wordt toegevoegd om de img
 window.onload = () => {

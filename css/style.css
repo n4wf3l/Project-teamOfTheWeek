@@ -137,7 +137,7 @@ header {
   width: 80%;
 }
 
-/* KLEINE SCHERM */
+/* KLEINE SCHERM RESPONSIEF*/
 @media screen and (orientation: portrait) {
   .field {
     background: url("../assets/images/field_rotated.jpg");

@@ -28,6 +28,8 @@ const loadPlayerInModal = () => {
   playerName.innerHTML = playerSelected[0].name;
 };
 
+
+
 const resetModal = () => {
   document.getElementById("playerInput").value = "";
   playerName = document.querySelector("#playerInModal-name");
