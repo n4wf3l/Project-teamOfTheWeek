@@ -28,24 +28,6 @@ const loadPlayerInModal = () => {
   playerName.innerHTML = playerSelected[0].name;
 };
 
-const loadPlayerOnField = (id) => {
-  var playerSelected = playersObject.filter((player) => {
-    return player.name === document.getElementById("playerInput").value;
-  });
-
-  localStorage.setItem(`player${id}_image`, playerSelected[0].picture);
-  localStorage.setItem(`player${id}_name`, playerSelected[0].name);
-
-  playerOfFieldImage = document.querySelector(`#player-${id} img`);
-  if (playerSelected[0].picture !== "No Image Found") {
-    playerOfFieldImage.src = playerSelected[0].picture;
-  }
-  playerOfFieldName = document.querySelector(`#player-${id} span`);
-  playerOfFieldName.innerHTML = playerSelected[0].name;
-
-  resetModal();
-};
-
 const resetModal = () => {
   document.getElementById("playerInput").value = "";
   playerName = document.querySelector("#playerInModal-name");

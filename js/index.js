@@ -18,7 +18,6 @@ let currentSelectedPlayer = -1;
 //maak een onClick (op de img) event aan voor alle spelers op het veld, deze wordt toegevoegd om de img
 window.onload = () => {
 
-
   inputPlayerModal.addEventListener("change", function () {
     loadPlayerInModal(currentSelectedPlayer);
   });
