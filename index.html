@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOTW</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@grabzit/js@3.5.2/grabzit.min.js"></script>
+</head>
+
+<body>
+  <!-- <div id="screenshot"> -->
+  <header>
+    <h1>Team of the week</h1>
+    <p>Eindwerkstuk Nawfel Ajari</p>
+    <p>Enkel Belgische spelers die actief zijn in de Jupiler Pro League.</p>
+  </header>
+  <!-- Het veld met 11 spelers -->
+  <div class="field">
+    <div id="player-1" class="player" data-player="1">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-2" class="player" data-player="2">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-3" class="player" data-player="3">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-4" class="player" data-player="4">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-5" class="player" data-player="5">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-6" class="player" data-player="6">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-7" class="player" data-player="7">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-8" class="player" data-player="8">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-9" class="player" data-player="9">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-10" class="player" data-player="10">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <div id="player-11" class="player" data-player="11">
+      <img src="assets/images/player.png" alt="Player" />
+      <span></span>
+    </div>
+    <button id="clearPlayers">Clear All Players</button>
+  </div>
+  <!--
+  <button onclick="takeshot()">
+    Take Screenshot
+  </button>
+-->
+
+  <!-- <script type="text/javascript">
+    // Define the function 
+    // to screenshot the div
+    function takeshot() {
+      html2canvas(document.body).then((canvas) => {
+        let a = document.createElement("a");
+        a.download = "ss.png";
+        a.href = canvas.toDataURL("image/png");
+        a.click();
+      });
+    }
+  </script> -->
+
+
+  <!-- Het creëren van een modaal die open gaat als je klikt op een icoontje-->
+  <div id="choosePlayerModal" class="choosePlayerModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <input id="playerInput" list="playersDatalist" />
+        <datalist id="playersDatalist"></datalist>
+      </div>
+      <div class="modal-body">
+        <img id="playerInModal-image" src="assets/images/player.png" alt="Player" />
+        <span id="playerInModal-name"></span>
+      </div>
+      <div class="modal-footer">
+        <button id="choosePlayer">Choose Player</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+  <script src="js/Players.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
