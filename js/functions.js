@@ -26,8 +26,12 @@ const clearPlayersFromLocalStorage = () => {
   location.reload();
 };
 
-// Er wordt in de Modal telkens data gehaald van de geselecteerde speler
-// Window Onload
+// Er wordt in de Modal telkens data gehaald van de geselecteerde speler.
+
+// Ik heb mijn input om de naam in te typpen. Deze functie overloopt alle spelers om vervolgens
+// een optie toe te voegen aan de datalist. De ForEach overloopt alle spelers dan maak ik een
+//option element aan. Hier geef ik de waarde aan van de naam vd speler en deze optie voeg ik
+// dan toe aan de datalist zodat ik deze kan zien als ik op input klik.
 const loadPlayersInDatalistFromPlayersObject = () => {
   let playersDatalist = document.getElementById("playersDatalist");
   playersObject.forEach(function (player) {

@@ -142,7 +142,7 @@ header {
   text-align: center;
 }
 
-/* KLEINE SCHERM */
+/* KLEINE SCHERM. */
 @media screen and (orientation: portrait) {
   .field {
     background: url("../assets/images/field_rotated.jpg");
