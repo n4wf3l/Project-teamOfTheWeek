@@ -1,4 +1,4 @@
-//Variabel wordt om de players te vinden via de Select Button in de Modal.
+//Variabel wordt om de players te vinden via de Select Button in de Modal
 let inputPlayerModal = document.getElementById("playerInput");
 
 //Variabel wordt gemaakt voor "Choose Player button"

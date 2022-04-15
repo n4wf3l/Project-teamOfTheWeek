@@ -1,4 +1,4 @@
-//Array met alle Belgische spelers.
+//Array met alle Belgische spelers
 const playersObject = [{
     name: "Wolf Ackx",
     picture: "https://proleague.be/dato/25478/1637762369-ackx-1.png?auto=format&crop=faces&fit=crop&h=640&w=640",
