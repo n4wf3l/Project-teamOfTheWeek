@@ -13,9 +13,18 @@ const playersOnField = document.querySelectorAll(".player");
 //variabele voor het bijhouden welke speler er geselecteerd is
 let currentSelectedPlayer = -1;
 
-
+let takeScreenshot = document.getElementById("takeScreenshot")
 //maak een onClick (op de img) event aan voor alle spelers op het veld, deze wordt toegevoegd om de img
 window.onload = () => {
+  loadPlayersFromLocalStorage();
+  playersOnField.forEach((playerOnField) => {
+    playerOnField.querySelector("img").addEventListener("click", function () {
+      currentSelectedPlayer = playerOnField.dataset.player;
+
+      showChoosePlayerModal();
+      loadPlayersInDatalistFromPlayersObject();
+    });
+  });
 
   inputPlayerModal.addEventListener("change", function () {
     loadPlayerInModal(currentSelectedPlayer);
@@ -25,4 +34,17 @@ window.onload = () => {
     loadPlayerOnField(currentSelectedPlayer);
   });
 
+  buttonClearPlayers.addEventListener("click", function () {
+    clearPlayersFromLocalStorage();
+  });
+
+  takeScreenshot.addEventListener("click", function () {
+    html2canvas(document.body).then((canvas) => {
+      let a = document.createElement("a");
+      a.download = "ss.png";
+      a.href = canvas.toDataURL("image/png");
+      a.click();
+    });
+
+  });
 };

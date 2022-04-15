@@ -10,6 +10,7 @@ html,
 body {
   width: 100vw;
   height: 100vh;
+  background-color: black;
 }
 
 header {
@@ -137,7 +138,11 @@ header {
   width: 80%;
 }
 
-/* KLEINE SCHERM RESPONSIEF*/
+.omtetesten {
+  text-align: center;
+}
+
+/* KLEINE SCHERM */
 @media screen and (orientation: portrait) {
   .field {
     background: url("../assets/images/field_rotated.jpg");
@@ -164,8 +169,4 @@ header {
     width: 15em;
   }
 
-  .modal-content {
-    height: 50%;
-    width: 60%;
-  }
 }
