@@ -1,5 +1,5 @@
 // Die eerste id gaat kijken of dat item al bestaat in de local storage. Zoniet moet hij het 
-//niet meer toevoegen. Het gaat wel kijken of er een foto is zoja voegt hij die toe aan localstorage
+//niet meer toevoegen. Het gaat wel kijken of er een foto is zoja voegt hij die toe aan localstorage.
 const loadPlayersFromLocalStorage = () => {
   for (let i = 1; i <= 11; i++) {
     let playerFromFieldImg = document.querySelector(`#player-${i} img`);

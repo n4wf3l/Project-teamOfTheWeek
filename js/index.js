@@ -38,6 +38,7 @@ window.onload = () => {
     clearPlayersFromLocalStorage();
   });
 
+  //Onderaan apparte script niet gecodeerd door mij maar uit het internet copy paste
   takeScreenshot.addEventListener("click", function () {
     html2canvas(document.body).then((canvas) => {
       let a = document.createElement("a");
