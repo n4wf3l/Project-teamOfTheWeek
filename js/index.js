@@ -7,7 +7,7 @@ let buttonloadPlayerOnField = document.getElementById("choosePlayer");
 //Variabel wordt gemaakt voor "Clear Player button"
 let buttonClearPlayers = document.getElementById("clearPlayers");
 
-//maak een array met alle spelers op het veld (je kunt erop klikken)
+//maak een array met de 11 spelers op het veld (je kunt erop klikken)
 const playersOnField = document.querySelectorAll(".player");
 
 //variabele voor het bijhouden welke speler er geselecteerd is
